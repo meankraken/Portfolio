@@ -1,0 +1,675 @@
+﻿#intro {
+  position:relative;
+  top:0;
+  left:0;
+  height:800px;
+  width:100%;
+  background-image:url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-397885.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  overflow:hidden;
+}
+
+.introRocket {
+  position:relative;
+  color:white;
+  top:100px;
+  text-align:center;
+  -webkit-animation:bob 7s linear infinite;
+}
+
+.rocketTop {
+  position:relative;
+  height:50px;
+  width:150px;
+  border-radius:50% 50% 0 0;
+  background-color:#5078ba;
+  margin:auto;
+  border-top:1px solid white;
+  border-left:1px solid white;
+}
+
+.rocketTop::after {
+  content:'';
+  position:absolute;
+  left:3px;
+  top:10px;
+  height:35px;
+  width:50px;
+  border-radius:50% 0 0 0;
+  border-left:5px solid white;
+  
+}
+
+.helloText {
+  font-family:Pacifico;
+  margin-top:10px;
+}
+
+.nameText {
+  font-family:Play;
+  font-size:3.5em;
+  margin-top:5px;
+  margin-bottom:5px;
+  letter-spacing:4px;
+  text-shadow:2px -2px 3px #72A2B3;
+}
+
+.bezel1 {
+  position:relative;
+  height:0px;
+  width:250px;
+  border-top:25px solid #5078ba;
+  border-left:25px solid transparent;
+  border-right:25px solid transparent;
+  margin:auto;
+}
+
+.rivets {
+  position:absolute;
+  height:20px;
+  width:100%;
+  top:-20px;
+}
+
+#rivets2 {
+  top:-5px;
+}
+
+.rivet {
+  display:inline-block;
+  height:5px;
+  width:5px;
+  border-radius:50%;
+  background-color:#B7B9BD;
+  margin-right:25px;
+  box-shadow:1px 0px 5px 1px black;
+}
+
+.rivet:nth-child(5) {
+  margin-right:0;
+}
+
+.bezel2 {
+  position:relative;
+  height:0px;
+  width:250px;
+  border-bottom:25px solid #5078ba;
+  border-left:25px solid transparent;
+  border-right:25px solid transparent;
+  margin:auto;
+}
+
+.smallText {
+  color:white;
+  margin-top:5px;
+  font-family:Lobster;
+}
+
+.shipBody {
+  position:relative;
+  height:100px;
+  width:250px;
+  background-color:grey;
+  margin:auto;
+  border-radius:0 0 15px 15px;
+  background-color:#5078ba;
+  border-bottom:1px solid white;
+  border-left:1px solid white;
+  border-right:1px solid #A6A6A6;
+}
+
+.shipBody::after {
+  content:'';
+  position:absolute;
+  left:3px;
+  top:2px;
+  height:95px;
+  width:120px;
+  border-radius:0 0 0 15px;
+  border-left:5px solid white;
+}
+
+.window {
+  position:relative;
+  height:55px;
+  width:55px;
+  top:20px;
+  margin:auto;
+  border-radius:50%;
+  background-color:#bbceed;
+  border:3px solid white;
+  box-shadow:0px 0px 7px 1px #3C3F45;
+}
+
+.thruster {
+  position:relative;
+  display:inline-block;
+  height:0px;
+  width:50px;
+  border-bottom:15px solid #6D82A3;
+  border-left:15px solid transparent;
+  border-right:15px solid transparent;
+  z-index:35;
+}
+
+.fuelContainer {
+  position:relative;
+  height:400px;
+}
+
+.fuel {
+  position:absolute;
+  transform:rotate(90deg);
+  font-family:Luckiest Guy;
+  letter-spacing:2px;
+  top:30px;
+  z-index:5;
+  -webkit-animation:boost 2s linear infinite;
+}
+.fuel:nth-child(1) {
+  left:47.5%;
+  animation-delay:.5s;
+}
+.fuel:nth-child(2) {
+  left:43%;
+}
+.fuel:nth-child(3) {
+  left:45%;
+  animation-delay:1.5s;
+  
+}
+.fuel:nth-child(4) {
+  left:51%;
+}
+.fuel:nth-child(5) {
+  left:48%;
+  animation-delay:1.2s;
+}
+.fuel:nth-child(6) {
+  left:52%;
+  animation-delay:.8s;
+}
+
+.secondRow {
+  margin-top:-5px;
+}
+
+#mainMenu {
+  position:absolute;
+  width:30%;
+  top:100px;
+  left:7%;
+}
+
+#mainMenu h1 {
+  color:white;
+  font-family:Iceland;
+  margin-top:0;
+}
+
+#mainMenu hr {
+  margin-top:0;
+  
+}
+
+.linkBox {
+  width:auto;
+  margin-bottom:20px;
+  cursor:pointer;
+}
+
+.linkHolder {
+  position:relative;
+  left:0;
+  transition:left .5s;
+  width:15%;
+}
+
+.linkHolder a {
+  display:inline-block;
+  text-align:left;
+  font-family:Lato;
+  font-size:1.5em;
+  width:auto;
+  color:white;
+  text-decoration:none;
+  
+}
+
+.bar {
+  height:3px;
+  width:50%;
+  background-color:#72a8ff;
+  transition: width .5s, margin .5s;
+}
+
+.star {
+  position:absolute;
+  width:3px;
+  border-radius:50%;
+  background-color:white;
+  top:-50px;
+  opacity:.5;
+  -webkit-animation: fall 2s linear infinite;
+}
+#star1 {
+  height:30px;
+  left:69%;
+}
+#star2 {
+  height:50px;
+  left:30%;
+  animation-delay:.3s;
+}
+#star3 {
+  height:30px;
+  left:37%;
+  animation-delay:1.5s;
+}
+#star4 {
+  height:40px;
+  left:65%;
+  animation-delay:.8s;
+}
+#star5 {
+  height:20px;
+  left:75%;
+  animation-delay:1.3s;
+}
+#star6 {
+  height:35px;
+  left:85%;
+  animation-delay:1.6s;
+}
+#star7 {
+  height:45px;
+  left:88%;
+  animation-delay:1.2s;
+}
+#star8 {
+  height:50px;
+  left:22%;
+  animation-delay:.5s;
+}
+#star9 {
+  height:30px;
+  left:7%;
+  animation-delay:1.7s;
+}
+
+
+@-webkit-keyframes bob {
+  30% { top: 105px; transform: scale(1) translate(-15px,0); }
+  50% { top: 90px; transform: scale(1) translate(0px,0); }
+  85% { transform: scale(1) translate(15px,0); top:110px; }
+}
+@-webkit-keyframes fall {
+  20%, 100% { top:100% }
+}
+@-webkit-keyframes boost {
+  50% { top: 45px }
+  70%, 100% { top:150%; color:orange }
+}
+
+#about {
+  position:relative;
+  height:800px;
+  width:100%;
+  background:url('https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-319101.jpg');
+  background-position:0 -100px;
+}
+
+.flatLine1 {
+  position:relative;
+  display:inline-block;
+  height:1px;
+  width:35%;
+  background-color:grey;
+  top:75px;
+}
+
+.aboutTitle {
+  position:absolute;
+  width:250px;
+  text-align:center;
+  left:50%;
+  top:50px;
+  transform:translate(-50%,0);
+  color:white;
+  font-family:Lato;
+}
+
+.flatLine2 {
+  position:relative;
+  display:inline-block;
+  height:1px;
+  width:35%;
+  background-color:grey;
+  top:90px;
+  float:right;
+}
+
+.aboutBox {
+  position:relative;
+  height:550px;
+  width:100%;
+  background-color:rgba(155,222,199,.4);
+  top:150px;
+  padding:10px;
+  margin:auto;
+  color:white;
+  font-family:Play;
+}
+
+.corner1 {
+  position:absolute;
+  top:-2px;
+  left:-2px;
+  height:75px;
+  width:75px;
+  border-left:4px solid rgba(255,255,255,.5);
+  border-top:4px solid rgba(255,255,255,.5);
+}
+.corner2 {
+  position:absolute;
+  top:-2px;
+  right:-2px;
+  height:75px;
+  width:75px;
+  border-right:4px solid rgba(255,255,255,.5);
+  border-top:4px solid rgba(255,255,255,.5);
+}
+.corner3 {
+  position:absolute;
+  bottom:-2px;
+  right:-2px;
+  height:75px;
+  width:75px;
+  border-right:4px solid rgba(255,255,255,.5);
+  border-bottom:4px solid rgba(255,255,255,.5);
+}
+.corner4 {
+  position:absolute;
+  bottom:-2px;
+  left:-2px;
+  height:75px;
+  width:75px;
+  border-left:4px solid rgba(255,255,255,.5);
+  border-bottom:4px solid rgba(255,255,255,.5);
+}
+
+.aboutBox img {
+  position:relative;
+  height:150px;
+  width:150px;
+  border:1px solid white;
+  
+}
+
+.statsBox {
+  height:250px;
+  width:100%;
+  background-color:rgba(0,0,0,.5);
+  margin-top:25px;
+  padding:5px;
+  border-radius:15px;
+  text-align:center;
+}
+
+.statsBox h4 {
+  font-family:Lato;
+}
+
+.statsBox hr {
+  width:50%;
+  opacity:.5;
+}
+
+#projects {
+  position:relative;
+  width:100%;
+  height:700px;
+  background-image:radial-gradient(ellipse,#9ea2a8,#38393a);
+  overflow:hidden;
+  
+}
+
+#leftPage {
+  position:absolute;
+  top:200px;
+  height:325px;
+  width:400px;
+  left:50%;
+  margin-left:-350px;
+  background-color:#303030;
+  z-index:10;
+  cursor:pointer;
+  border-radius:15px;
+  box-shadow:0px 0px 5px 3px black;
+}
+
+
+.sideTitle {
+  color:white;
+  top:220px;
+  box-shadow:inset 0px 0px 5px 1px black;
+  width:120px;
+  height:30px;
+  text-align:center;
+  font-size:1.1em;
+  font-family:Play;
+  letter-spacing:1px;
+  
+}
+
+#leftTitle {
+  position:relative;
+  transform:rotate(-90deg);
+  transform-origin:left top;
+}
+
+#rightTitle {
+  position:absolute;
+  right:0;
+  transform-origin:right top;
+  transform:rotate(90deg);
+  
+}
+
+#mainPage {
+  position:relative;
+  height:400px;
+  width:600px;
+  background-image:radial-gradient(ellipse,#59bbd1,#276789);
+  margin:auto;
+  top:150px;
+  z-index:99;
+  border-radius:15px;
+  box-shadow:0px 0px 10px 2px black;
+  text-align:center;
+  padding:0 10px 0 10px;
+}
+
+#rightPage {
+  position:absolute;
+  top:200px;
+  height:325px;
+  width:400px;
+  left:50%;
+  margin-left:-50px;
+  background-color:#303030;
+  z-index:10;
+  cursor:pointer;
+  border-radius:15px;
+  box-shadow:0px 0px 5px 3px black;
+}
+
+.headerHolder {
+  border-radius:0 0 5px 5px;
+  border-left:1px solid #353535;
+  border-right:1px solid #353535;
+  border-bottom:1px solid #353535;
+  height:50px;
+  width:200px;
+  margin:auto;
+  box-shadow:inset 0px 0px 6px 1px black;
+  background-color:#348DA8;
+}
+
+.headerHolder h3 {
+  font-family:Play;
+  margin:0;
+  line-height:50px;
+  color:#91e0f2;
+  
+}
+
+.descriptionHolder {
+  position:relative;
+  top:15px;
+  font-family:Play;
+}
+
+.descriptionHolder h5 {
+  color:#61d8d6;
+  color:white;
+  color:#82DCE8;
+  
+}
+
+.descriptionHolder p {
+  color:#DBDBDB;
+}
+
+.descriptionHolder hr {
+  margin-top:25px;
+  margin-bottom:25px;
+  width:80%;
+  border-color:#B9E2EB;
+  opacity:.3;
+}
+
+.navi {
+  height:120px;
+}
+
+.navi .core {
+  position:relative;
+  height:20px;
+  width:20px;
+  border-radius:50%;
+  background-image:radial-gradient(white,#9bb8e8);
+  margin:auto;
+  top:50px;
+  
+}
+
+.navi .wings {
+  position:relative;
+  height:55px;
+  width:55px;
+  border-radius:50%;
+  border-left:1px dashed #41e2e2;
+  border-right:1px dashed #41e2e2;
+  border-top:1px solid white;
+  border-bottom:1px solid white;
+  margin:auto;
+  top:11px;
+  cursor:pointer;
+  -webkit-animation:turn 5s linear infinite;
+}
+
+.cautionText {
+  font-size:.9em;
+}
+
+@-webkit-keyframes turn {
+  0% { }
+  100% { transform:rotate(360deg)}
+}
+
+
+
+
+
+
+.leftAnim-enter {
+  opacity:0;
+  transform:translateX(-100%) rotateY(180deg);
+}
+
+.leftAnim-enter.leftAnim-enter-active {
+  transform:translateX(0%) rotateY(0);
+  opacity:1;
+  transition: transform 750ms, opacity 750ms;
+  transition-delay:500ms;
+}
+
+.leftAnim-leave {
+  opacity:1;
+  transform:translateX(0%) rotateY(0deg);
+}
+
+.leftAnim-leave.leftAnim-leave-active {
+  transform:translateX(-100%) rotateY(180deg);
+  opacity:0;
+  transition: transform 500ms, opacity 500ms;
+}
+
+.mainAnim-enter {
+  opacity:0;
+  transform:translateY(-100%);
+}
+
+.mainAnim-enter.mainAnim-enter-active {
+  opacity:1;
+  transform:translateY(0);
+  transition: transform 750ms, opacity 750ms;
+  transition-delay:500ms;
+}
+
+.mainAnim-leave {
+  transform: translateY(-100%);
+  opacity:1;
+}
+
+.mainAnim-leave.mainAnim-leave-active {
+  opacity:0;
+  transform: translateY(-250%);
+  transition: opacity 500ms, transform 500ms;
+}
+
+.rightAnim-enter {
+  opacity:0;
+  transform:translateX(100%) rotateY(-180deg);
+}
+
+.rightAnim-enter.rightAnim-enter-active {
+  transform:translateX(0%) rotateY(0);
+  opacity:1;
+  transition: transform 750ms, opacity 750ms;
+  transition-delay:500ms;
+}
+
+.rightAnim-leave {
+  opacity:1;
+  transform:translateX(0%) rotateY(0deg);
+}
+
+.rightAnim-leave.rightAnim-leave-active {
+  transform:translateX(100%) rotateY(-180deg);
+  opacity:0;
+  transition: transform 500ms, opacity 500ms;
+}
+
+
+
+
+
+
+
+
+
+
+
