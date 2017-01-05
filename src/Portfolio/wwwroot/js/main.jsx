@@ -19,6 +19,8 @@ $(document).ready(function() {
       $(this).find('a').css('border-top','').css('border-bottom', '');
   });
 
+    //links 
+
   $('#aboutBox').on('click', function() {
     $('html, body').animate({
         scrollTop: $('#about').offset().top
@@ -30,13 +32,24 @@ $(document).ready(function() {
     },500);
   });
   $('#contactBox').on('click', function() {
-    document.getElementById('contact').scrollIntoView();
+      $('html,body').animate({
+          scrollTop: $('#contact').offset().top 
+      },500);
   });
   
+  $('#emailBadge').on('click', function () {
+      window.location.href = 'mailto:contactfengjeff@gmail.com'; 
+  });
+  $('#gitBadge').on('click', function () {
+      window.open('https://github.com/meankraken', '_blank');
+  });
+  $('#codepenBadge').on('click', function () {
+      window.open('http://codepen.io/meankraken/#', '_blank');
+  });
 
   //resize section sizes if applicable
     if ($(window).height() > 750) {
-    $('#intro,#about,#projects').css('height',$(window).height());
+    $('#intro,#about,#projects,#contact').css('height',$(window).height());
   }
   
 
@@ -69,6 +82,18 @@ $(document).ready(function() {
     $('#rightPage').stop();
     $('#rightPage').animate({marginLeft:'-50px'},500);
   });
+
+
+  //navigation core hover effects  
+  $(document).on('mouseenter', '.wings', function () {
+      $(this).css('height', '80px').css('width', '80px').css('top', '0px').css('animation-duration', '2s');
+      $('.core').css('background-image', 'radial-gradient(white,#6adbed)');
+  });
+  $(document).on('mouseleave', '.wings', function () {
+      $(this).css('height', '').css('width', '').css('top', '');
+      $('.core').css('background-image', '');
+  });
+ 
 
 });
 
@@ -144,7 +169,7 @@ class MainPage extends React.Component {
   }
 
   navTo() {
-    window.location.href=this.props.link;
+      window.open(this.props.link, '_blank'); 
   }
 
   render() {

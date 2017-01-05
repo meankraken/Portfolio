@@ -33,10 +33,12 @@ namespace Portfolio
 
             loggerFactory.AddConsole();
 
+            
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
+            
 
             app.UseMvc(config =>
             {
