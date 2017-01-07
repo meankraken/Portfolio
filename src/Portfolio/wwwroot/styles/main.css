@@ -1,13 +1,13 @@
 ﻿#intro {
-  position:relative;
-  top:0;
-  left:0;
-  height:800px;
-  width:100%;
-  background-image:url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-397885.jpg");
-  background-repeat:no-repeat;
-  background-size:cover;
-  overflow:hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 800px;
+    width: 100%;
+    background-image: url('../imgs/rockets.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
 }
 
 .introRocket {
@@ -313,11 +313,11 @@
 }
 
 #about {
-  position:relative;
-  height:800px;
-  width:100%;
-  background:url('https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-319101.jpg');
-  background-position:0 -100px;
+    position: relative;
+    height: 800px;
+    width: 100%;
+    background-image: url('../imgs/planets.jpg');
+    background-position: 0 -100px;
 }
 
 .flatLine1 {
@@ -619,13 +619,12 @@
 }
 
 #contact {
-    height:700px;
-    width:100%;
-    background:url('https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-113384.png');
+    height: 700px;
+    width: 100%;
+    background-image: url('../imgs/keyboard.png');
     /*
     background-image:linear-gradient(to right,#595959,#292929);
         */
-
 }
 
 .contactBadge {
