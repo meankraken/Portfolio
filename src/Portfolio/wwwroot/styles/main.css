@@ -426,6 +426,13 @@
   opacity:.5;
 }
 
+#loadError {
+    text-align:center;
+    color:white;
+    font-family:Lato;
+    margin-top:40%;
+}
+
 #projects {
   position:relative;
   width:100%;
